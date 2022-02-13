@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "bb46eb21-01c4-48d5-8f04-4d9444abceee",
+		"name": "EDKA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/surveys/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"surveys",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createOne",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Wai Phyo\",\r\n    \"company\": \"GNWT\",\r\n    \"email\": \"waiphyo.dev@gmail.com\",\r\n    \"phone\": \"09221345678\",\r\n    \"age\": 25,\r\n    \"comment\": \"HELLO\",\r\n    \"aggrement\": 1,\r\n    \"token\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/surveys/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"surveys",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateOne",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Wai Phyo\",\r\n    \"company\": \"GNWT\",\r\n    \"email\": \"waiphyo.dev@gmail.com\",\r\n    \"phone\": \"09221345678\",\r\n    \"age\": 25,\r\n    \"comment\": \"HELLO\",\r\n    \"aggrement\": 1,\r\n    \"token\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/surveys/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"surveys",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOne",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
